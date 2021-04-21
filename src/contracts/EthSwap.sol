@@ -17,7 +17,7 @@ contract EthSwap {
     // msg is global variable inside of sol
     // person calling function is sending ETH to buy tokens
     // payable = key word to send eth
-    function buytokens() public payable {
+    function buyTokens() public payable {
         // Calculate the number of tokens to buy
         // Redemption rate = # of tokens they receive for 1 ETH
         // Amount of EHT * redemption rate
@@ -25,4 +25,4 @@ contract EthSwap {
         token.transfer(msg.sender, tokenAmount);
     }
 }
-// TUES MAKEUP - 1:09:31
+// WED MAKEUP - 1:17:34
